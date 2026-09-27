@@ -38,7 +38,8 @@ telecom provider that IBM describes as fictional. The target is `Churn` (Yes/No)
 6. **Type corrections**: `TotalCharges` to float, `SeniorCitizen` to Yes/No, text columns to `category`,
    and a new `churn_flag`.
 7. **EDA** (`src/03_eda.py`): descriptive statistics, distributions, churn rates by category and tenure
-   band, Pearson/Spearman correlations and Cramer's V, with six charts.
+   band, Pearson/Spearman correlations and Cramer's V, with seven charts (including a tenure trend
+   line and a tenure vs total-charges scatter plot).
 
 ## Key results
 
@@ -77,7 +78,7 @@ These are descriptive associations, not causal effects. They are tested in Week 
 |   |-- 02_data_cleaning.py
 |   `-- 03_eda.py
 |-- outputs/
-|   |-- figures/                     # fig1_1 ... fig1_6
+|   |-- figures/                     # fig1_1 ... fig1_7
 |   |-- tables/                      # 13 CSV tables (missing values, dtypes, statistics, ...)
 |   `-- results/                     # acquisition, cleaning and EDA summaries (JSON)
 `-- screenshots/                     # 15 screenshots of the executed notebook
